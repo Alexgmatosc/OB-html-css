@@ -1,0 +1,33 @@
+* {
+    border: 1px solid red;
+}
+
+/* Estilos para dispositivos con ancho mayor o igual a 640px */
+@media (min-width: 640px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /* Estilos para la barra lateral izquierda */
+    .sidebar-left {
+        display: flex;
+      flex-direction:column;
+    }
+    /* Estilos para la sección principal */
+    .main-section {
+      flex-grow: 1;
+    }
+  }
+  
+  /* Estilos para dispositivos con ancho menor a 640px */
+  @media (max-width: 640px) {
+    /* Estilos para la barra lateral izquierda */
+    .sidebar-left {
+      display: flex;
+      flex-direction: row;
+    }
+    /* Estilos para la sección principal */
+    .main-section {
+      flex-grow: 1;
+    }
+  }
